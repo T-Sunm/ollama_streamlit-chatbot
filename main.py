@@ -6,8 +6,8 @@ from utils.init import init
 from openai import OpenAI
 def main():
   llm = OpenAI(
-      base_url="http://localhost:11434/v1",
-      api_key="ollama",  # required, but unused
+      base_url="http://localhost:12345/v1",
+      api_key="ollama",
   )
   message_container, selected_model = init()
 

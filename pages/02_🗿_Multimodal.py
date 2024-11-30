@@ -56,7 +56,7 @@ def main():
 # https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-chat-completion
 
 #  api generate dựa tên ảnh
-      API_URL = "http://localhost:11434/api/generate"
+      API_URL = "http://localhost:12345/api/generate"
       headers = {
           "Content-Type": "application/json",
           "Accept": "application/json",

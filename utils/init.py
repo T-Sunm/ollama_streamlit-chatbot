@@ -12,7 +12,7 @@ def init():
   st.header("Your own ChatGpt ")
 
   available_models = extract_model_names(models_info=ollama.list())
-
+  print(ollama.list())
   if available_models:
     selected_model = st.selectbox(
         "Pick a model available locally on your system", available_models

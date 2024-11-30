@@ -5,7 +5,8 @@ from io import BytesIO
 from PIL import Image
 import base64
 def extract_model_names(models_info: dict):
-  return tuple([model["name"] for model in models_info["models"]])
+  return tuple([model.model for model in models_info.get("models", [])])
+
 
 def get_allowed_model_names(models_info: dict):
   allowed_models = ["bakllava:latest", "llava:latest"]
